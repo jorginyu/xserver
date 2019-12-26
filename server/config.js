@@ -1,26 +1,26 @@
 // ============================
-//  Puerto
+// PORT
 // ============================
 process.env.PORT = process.env.PORT || 8080;
 
 
 // ============================
-//  Vencimiento del Token
+// Token 
 // ============================
-// 60 segundos
-// 60 minutos
-// 24 horas
-// 30 días
-process.env.CADUCIDAD_TOKEN = '48h';
+// 60 seconds
+// 60 minutes
+// 24 hours
+// 30 days
+process.env.CAD_TOKEN = '48h';
 
 
 // ============================
-//  SEED de autenticación
+// AUTH SEED
 // ============================
 process.env.SEED = process.env.SEED || 'xserver-x-seed';
 
 // ============================
-//  Base de datos
+// DATABASE
 // ============================
 
 process.env.DB = process.env.DB || 'mongodb://localhost:27017/xserver';

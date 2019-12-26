@@ -27,7 +27,7 @@ app.post('/signup', (req, res) => {
 
           let token = jwt.sign({
                user: userDB
-          }, process.env.SEED, { expiresIn: process.env.CADUCIDAD_TOKEN });
+          }, process.env.SEED, { expiresIn: process.env.CAD_TOKEN });
 
           res.json({
                ok: true,
@@ -70,7 +70,7 @@ app.post('/login', (req, res) => {
 
           let token = jwt.sign({
                user: userDb
-          }, process.env.SEED, { expiresIn: process.env.CADUCIDAD_TOKEN });
+          }, process.env.SEED, { expiresIn: process.env.CAD_TOKEN });
 
           res.json({
                ok: true,
